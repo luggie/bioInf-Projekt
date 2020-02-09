@@ -1,0 +1,35 @@
+1. Was wir letzte Woche geschafft haben:
+    4 Branches in Git erzeugt (für 4 Hauptkomponenten)
+    Main Funktion ausgelagert
+    Gradient Decent implementiert
+    Partikel + Pfeil aus Gradient erzeugt
+    Zoom + Drag
+ 
+2. Wie funktioniert die Verbindung von Pseudocode und echtem Code?
+    Beim Drücken von Calculate in der GUI erzeugt die Optimization Class ein Ergebnis-Array (PseudocodeLine, Partikelposition, Gradient-Pfeil, ...)
+    --> es gibt mehrere Bilder auf denen je eine Zeile des Pseudocodes hervorgehoben wird (Bilder existieren irgendwo vorher, werden einzeiln in die GUI geladen)
+    
+   BESSER: Ein Bild mit halbtransparentem Rahmen zum Highlighten
+   NOCH BESSER: Textfeld mit Highlights
+ 
+3. TODO
+    3.1 GUI
+        Pause Button 
+        Anzeigen der Kurve an Windowframe anpassen
+        echte Pseudocode Bilder
+        
+    3.2 Optimization/Visualization
+        Pfeile für Gradient fixen
+        Gradient Vektor formalisieren (so dass 1D, 2D, 3D kein Problem sind)
+        Flag für Algorithmen ohne Gradient
+ 
+    3.3 Objective Function/Visualization
+        Splines (Funktion für "zufällige" Werte --> realistischere Energielandschaft)
+        3D Funktion (mplot3d)
+ 
+    3.4 pytest
+       für jede Klasse Tests schreiben (v.a. Parameter, die an andere Klassen übergeben werden sollen und kritische interne Funktionen)
+       fixtures: erzeugen von Testszenarien
+ 
+    3.5 Dokumentation
+       pep8 Style Guide for Python

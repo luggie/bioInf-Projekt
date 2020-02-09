@@ -1,0 +1,42 @@
+bug 
+    program crash wenn: irgendeine funktion -> calculate, danach interpolated -> calculate
+    
+reset button wieder einfuegen
+
+GUI: 
+    parameter fenster groesser
+    aktuelle x,y koordinatan mit maus hover oder unter dem plot anzeigen
+    evtl startpunkt mit der maus waehlen
+    
+Pseudocode:
+    richtiger text,
+    richtige highlights
+
+gradient decent
+    bei gradient decent evtl keine pfeile mehr
+
+    default threshold kleiner, so dass er fuer beliebige zielfunktion das minimum findet
+    
+simmulated annealing
+    temp legende ? 
+    plotcanvas bei jedem calculate neu?
+    bester wert am ende anzeigen
+    starttemperatur kleiner (50), decrease (0.8)
+    next step durch gauss sample
+    max steps als parameter setzbar (nicht hardcoded)
+    iteration und akzeptierte schritte sind unterscheidliche parameter
+        while condition muss beide parameter pruefen
+    akzeptierte punkte anders faerben als interationschritte
+    konvergenzkriterium: anzahl von schritten, die den besten wert nicht mehr veraendern
+    
+objective funkctions
+    sim anneal nemesis (evtl ableitung verbuggt)
+    
+    bond angle pot ist einfaches harmonisches potential
+    
+    torsionswinkelpotential
+    
+    lennard jones: default startpunkt an parameter anpassen
+    
+
+    

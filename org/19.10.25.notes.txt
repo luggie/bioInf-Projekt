@@ -1,0 +1,111 @@
+ 
+Notes 25 oct 2019
+
+Some items from here should be moved into a separate technical file
+(libraries, function signatures).
+
+
+1 communication between components
+==================================
+
+We had an initial UML description of the component layout ideas.
+
+
+2 libraries
+===========
+
+We have settled on
++ python
++ matplotlib
++ pyqt (python bindings for qt)
+
+
+3 next week, 1 Nov
+==================
+
++ brueckentag - hope everyone is still here
++ Timur talk about GIT
++ maybe Sandra talks about a python test framework
++ Malte should set up a git account somewhere (his choice)
++ simple example of pyqt talking to matplotlib
++ could somebody explain to Andrew the plan for connecting real code
+to pseudo-code ?
++ could we have some proposals for tasks and who will do what ?
+
+
+4 distribution of jobs
+======================
+
++ Lukas is the king of the GUI.
++ If Malte sets up our starting git, Malte will probably end up taking
+care of it.
+
+
+5 Andrew
+========
+
++ add Timur to Stine
+
+
+5.1 seminars
+~~~~~~~~~~~~
+
+Names with dates have been typed in the ZBH Wiki. Some of the times
+can be moved around (from 11 to 9:30 for example). Tell Andrew if the
+entry should be changed.
+
+To get more information about the papers, you can look in google
+scholar and pubmed, but for the expensive information services, go to
+<https://www.sub.uni-hamburg.de/startseite.html> and look for "web of
+science". I use the library's proxy (it asks for your Uni Ausweis
+number), but some people use a VPN. It will do a search for
++ who has referenced this paper
++ who is referenced by this paper.
+
+
+6 Optimisation Algorithm signature
+==================================
+
+We want a description which can handle various types of methods with
+different requirements.
+
+How many points describe the current state or progress ? Examples:
+
+
+6.1 one point
+~~~~~~~~~~~~~
+
++ steepest descents
++ conjugate gradients
++ simulated annealing
+
+
+6.2 a few points
+~~~~~~~~~~~~~~~~
+
++ simplex (for n dimensions, we need to show n+1 points, probably with
+different colours)
+
+
+6.3 many points
+~~~~~~~~~~~~~~~
+
++ genetic algorithms (yuk)
++ swarm / colony methods
+
+Does a method absolutely require gradients ?
++ yes - steepest descents, force-biased Monte Carlo
++ no - simplex, genetic algorithms, swarm
+
+
+7 Cost function definition /signature
+=====================================
+
+We will start with cost = x^2, but we will need more interesting
+cases.
++ even if we start with one parameter (x), we need to be able to
+handle `n' parameters.
++ does the cost function provide gradients ? Must the cost function
+provide gradients ? This would be a severe limitation.
++ singularities - lots of entertaining function do explode. Do we
+forbid such functions ?

@@ -1,0 +1,31 @@
+ 
+Things to do - who might do it:
+
+- Gestrichelte Linie zwischen Pfeil und Punkt bei Gradient Descend - Malte, Luggie
+
+- Torda Funktion mittels Interpolatefunktion - Sarah
+
+- Lennard Jones nur positiv - JB
+
+- get_preferred_plot_window_size fuer jede objective function - Sarah
+    - daraus tracing haeckchen - luggie
+
+- Sortierung der Klicks der Interpolatefunktion - Sandra
+
+- Anzeigen der Klicks der Interpolatefunktion direkt nach Klick und 
+  plot der Funktion nach Enter - luggie
+  
+- Zeilen der Pseudocodes zu jedem Algorithmus als Latexzeilen - Sandra
+    - dazu eventuell Textbloecke aus Textbuechern als Erklaerung
+    
+- Tests: wir haben uns auf unittest geeinigt - alle
+
+- scientific/torda mode - luggie
+
+- einstellungsfester fixed size aber scrollbar - luggie
+
+- additional settings als dropdown menu - luggie
+
+- plotart nochmal ueber den haufen werden - malte
+
+- checken wo der fehler liegt auf branch klassenklammern - jeder der sich berufen fuehlt

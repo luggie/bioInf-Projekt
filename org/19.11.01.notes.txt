@@ -1,0 +1,111 @@
+
+
+Notes from 1 Nov 2019.
+
+
+1 Git description
+=================
+
+  Timur gave a git introduction and discussed they layout of directories
+  for different aspects of the project.
+
+
+2 jobs allocated
+================
+
+  Somewhere, there is a list of who is doing what.
+
+
+3 Status
+========
+
+3.1 the code (interface and back end)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  First demo of code based on
+  + pyqt
+  + matplotlib canvas for drawing functions
+  + qt widgets for other parts of the interface
+
+
+3.2 git
+~~~~~~~
+
+  Currently on mafiasi.de. Andrew has no access. Mafiasi require an
+  email address in informatik or physnet.  On github, the project would
+  have to be public.  On bitbucket (gitbucket ?) there are less
+  restrictions.
+
+
+3.2.1 branches
+--------------
+
+  Timur suggested separate branches for four things, but I missed this
+  detail. People ? Aspects of the project ?
+
+
+3.3 pytest discussion
+~~~~~~~~~~~~~~~~~~~~~
+
+  Postponed until next week.
+
+
+4 Next steps
+============
+
+4.1 Nice example
+~~~~~~~~~~~~~~~~
+
+  Have a look at [example with sliders and much interactivity] It seems
+  to be in d3s (javascript library), but has lots of examples of
+  controlling a procedure interactively.
+
+
+[example with sliders and much interactivity]
+<https://distill.pub/2017/momentum/>
+
+
+4.2 Explanation
+~~~~~~~~~~~~~~~
+
+  Somebody should explain to Andrew in more detail about
+  + back end / front end messaging
+  + synchronising the text with the pictures
+
+
+4.3 GUI
+~~~~~~~
+
+  + We should be able to drag and zoom on the interface to the plots.
+  + sliders for parameters (like cooling rate in simulated annealing,
+    convergence criteria, scatter of initial values for simplex, initial
+    step size in steepest descents)
+
+
+4.4 protocol
+~~~~~~~~~~~~
+
+  Somebody else should make notes next time.
+
+
+4.5 optimisation methods and cost functions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+4.5.1 common parameters
+-----------------------
+
+  Lukas asked about parameter limits on the interface. This hints at
+  something more general. Some methods are sensitive to parameter
+  values. Let us plan the cost functions so they are initially defined
+  over a domain and range that is as similar as possible. For example,
+  the range is usually [-1:1] and the domain is [0:1]. As far as
+  possible, this will reduce surprises due to strange parameter values.
+
+
+4.5.2 common signatures
+-----------------------
+
+  The keyword that Timur mentioned is abstract base classes. This has to
+  characterise the minimum necessary for a cost function or an
+  optimisation function.
+

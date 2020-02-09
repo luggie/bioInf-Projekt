@@ -1,0 +1,85 @@
+
+
+1. Code. Review.
+
+    Es fehlen (immer noch):
+
+        Tests fuer alles
+
+        Docstrings in objective_function, algorithms
+
+    fuer alle Klassen:
+
+        unterscheiden zwischen public/private (bsp: _private_variable)
+
+   
+
+    objective_function:
+
+        polynom+sinus funktion - ergibt "wellige" funktion
+
+        1D/2D/N-dimensional benchmarking functions: http://benchmarkfcns.xyz/fcns
+
+        interpolated: user kann eingabe machen (evtl nur in 1D), oder zufällige punkte (für n dimensionen)
+
+
+    buffer array:
+
+        berechnung der länge überfüssig, array hat attribut .size
+
+        name tuple: kommentar, erkläre bedeutung der attribute
+
+
+    algorithms:
+
+        snake_case, CamelCase beachten
+
+        TODO: implement simulated annealing
+
+
+    plot_canvas:
+
+        init finktion ist zu lang
+
+        kann man das in in private methoden aufteilen?
+
+        snake_case, CamelCase beachten
+
+        gedanken machen, wie man 2D plot implementieren könnte
+
+
+    GUI:
+
+        cases beachten
+
+        setup GUI zu lang -> kann man das aussplitten
+
+        pop up fenster (fuer warnings, parameters):
+
+            neue abstract class?
+
+            wie loest man kreisvererbung zw. GUI class, popup class und objective_function auf?
+
+       
+        func_parser: clever gelöst, evtl Namen ändern
+
+   
+
+    main:
+
+        statt globals in den inits der packages ein dictionary, das explizit in den klassen definiert wird
+
+
+2. requirements.txt
+
+       welche packages muss man installieren
+
+       anaconda importiert das dann automatisch :)
+
+
+3. UML diagramm aktualisieren
+
+
+4. git merger konflikte auflösen
+
+    konflikte im master beheben, commiten, dann in die branches mergen

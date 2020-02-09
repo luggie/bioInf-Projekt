@@ -1,0 +1,32 @@
+1. Dokumetation/Style
+
+     nach dem pep8 style guide (Stichwort: Documetation string)
+
+     für alle public Module (auch __init__(soll beinhalten was das Modul macht)), Funktionen, Klassen und Methoden
+
+     nicht-public Funktionen sollen auch einen kurzen Kommentar enthalten
+
+     sollte so zu lesen sein, dass man das Programm versteht ohne den Code gelesen zu haben
+
+    
+
+     Namen: ClassNamesInCaps, function_names_in_lowercase....
+
+     80 Zeichen pro Zeile
+
+    
+
+     exceptions statt asserts benutzen
+
+
+2. Tests
+
+    alle Klassen die Werte an andere Module/Klassen/Funktionem weiter geben, sollen getestet werden:
+
+    tests auf richtigen Variablen Typ, Existenz von Attributen,
+
+    GUI Test: User Eingabe (Mit Message an User, dass er eine falsche Eingabe gemacht hat)
+
+              stress test: bombardieren mit Eingaben: wann crasht die GUI?
+
+     

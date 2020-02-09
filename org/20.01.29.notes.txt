@@ -1,0 +1,145 @@
+
+########
+  TODO
+########
+
+Marker für current_minimum bei sim anneal
+
+achsen anpassen, so dass man alle punkte von sim anneal sieht
+
+kompakte UML Diagramm version für vortrag (siehe Fo.12)
+
+andrew aus dem icon entfernen
+
+create array ist eine abstractmethod
+
+docstrings für abstractmethods (weniger detailiert als in der konkreten 
+implementierung)
+
+temp skala logarithmisch (sonst sind fast alle punkte blau)
+
+stepsize raus aus sim anneal
+
+pseudocode highlights korrekt
+
+wenn man auf file save geht crasht das programm
+
+
+########
+ Folien
+########
+
+generell
+    screenshots aus dem Programm verwenden
+    variablen kursiv und einheitlich (sonst weint andrew)
+    bilder neben den text (wenn möglich und sinnvoll)
+    minimum = einzahl, minima = mehrzahl
+    tausche folie 13 und 14
+    
+
+
+Fo.2    
+    Programm für ein pflichtmodul der MLS/Biochemie studierenden
+    Idee: für die Vorlesung -> schöne Bilder aus dem Programm verwenden
+          für die übung -> studies sollen ein gefühl für das verhalten 
+          der algorithmen bekommen (mit vers. zielfunktionen und vers.
+          parametern)
+          dazu soll auch immer der pseudocode zu sehen sein, aktueller schritt
+          gehighlightet
+          langfristig soll sogar von den studies veränderbarer code 
+          implementiert werden
+          programm soll leicht erweiterbar sein (dazu später mehr)
+          
+Fo.3
+    gradient decent ist ein überbegriff, unsere implementierung ist 
+    technisch gesehen eine steepest decent implementierung
+    was bedeutet optimierung ohne nebenbedingungen
+    etwas ausführlicherer pseudocode, konvergenzkriterium
+    
+Fo.4
+    screenshot benutzen
+    
+Fo.5
+    sim anneal findet nicht immer das globale minimum
+    aber es besteht die chance ein lokales minimum wieder zu verlassen
+    akzeptanzkriterium ermöglicht es, ein kleineres minimum zu finden
+    pseudocode ...
+    bild auf die folie ?
+    
+Fo.6
+    achsenbeschriftungen y = AU (arbitrary units)
+    hintergrundfarbe weiß
+    
+Fo.7
+    bilder zu sim anneal crasher und lennard jones und andere
+    
+    warum physikalisch sinnvolle funktionen ?
+        vertraute funktionen für MLS studies
+        in der Realität sind die funktionen auf denen man optimiert
+        wesentlich komplexer (zB alle winkel-/bindungspotentiale summiert auf
+        einem molekül)
+        aber dafür haben wir ja interpolated ;)
+        
+Fo.9/10
+    achsenbeschriftungen einheitlich
+    
+Fo.11
+    ersten beiden punkte löschen.
+    wir wählten python weil wir es alle gut können
+    
+    python bietet abstrakte klassen: erweiterbarkeit
+    
+    nützliche/genutzte bibliotheken
+        matplotlib : bietet framework für das abbilden von funktionen mit vielen
+                     ansprechenden visuellen möglichkeiten
+        pyqt : bibliothek zur erstellung von GUI anwendungen mit python
+        scipy : bietet interpolated funktion inklusive ableitung
+        
+    git : branches auf verschiedene programmteile eingeteilt
+          personen auf programmteile zugeteilt
+          überleitung zu UML
+          
+Fo.12
+    timur durch MLS studierenden ersetzen
+    wenn möglich vektorgrafik
+    funktionen zusammenfassen (bsp für GUI: buttons, menus, panels)
+    
+Fo.13
+    Monte carlo raus (sim anneal ist eine anwendung die MC prinzip benutzt)
+    nicht alle möglichen algorithmen aufzählen, lieber was sinnvoll ist
+    
+    genetische algo verwendet man auf multidimensionellen systemen -> schwierig
+    mit unserer software darzustellen --> raus
+    
+    simplex (nelder mead) ist möglich
+        mit beispiel (von wikipedia) auf die folie
+        
+Fo.14
+    fazit: wir haben eine basis gebaut, die gut erweiterbar ist
+           ergänzung von darstellungsmöglichkeiten -> 3D
+           ergänzung von nicht ableitbaren zielfunktionen (MC basierte
+           optimierungsverfahren können das trotzdem)
+    
+    
+Live Demo
+    Code zeigen ? : welche abstrakte klasse können wir am besten zeigen?
+    
+    finde die angeberischste, beeindruckendste, coolste, niceste kombination
+    aus zielfunktionen und algorithmen und parametern -> man soll gut sehen was
+    der algorithmus tut
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+

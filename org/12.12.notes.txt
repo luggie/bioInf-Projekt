@@ -1,0 +1,45 @@
+
+1. Tests
+    
+    tests entweder in de  root ordner oder in die jeweiligen ordner in denen gestestet wird
+    aber auf jeden fall eintheitlich
+    GUI tests: pytest qt (kann user eingaben simulieren)
+    algorithms: check ob array existiert und die richtige laenge hat
+    gradient decent: test ob monoton fallend
+    simulated annealing: sind alle temp werte monoton fallend
+
+2. simulated annealing: 
+    
+    richtige parameter finden
+    abkuehlrate: T = T_0 * exp(c * t)
+    nach x steps term. temperatur
+    stepsize bsp: x achse von -10 bis 10 -> stepsize 0.01
+    next step durch gauss funktion
+    punkte nach temperatur einfaerben ( farben logarithmisch skallieren)
+    
+3. GUI
+    skalliere plot immer nach funktion. 
+    Fenster einhaelt immer aktuellen iterationsschritt
+4. projekt in ein executable packen mit entsprechender conda enviroment (bis vor den ferien?)
+
+5. code review
+ 
+    main.py hat immer noch globale variablen -> dictionary
+ 
+    anzahl der algorithmus schritte per user eingabe festlegen
+ 
+    convergence der algorithmen
+ 
+    plotcanvas: check boundaries in function auslagern
+ 
+    pop_up_gui_methods: generisches pop_up?
+ 
+    objective function:
+        tests
+        kombination von funktionen (addition, multiplikation, verkettung)
+        lennard jones potential
+        winkel energie
+ 
+6. alles was packages (numpy,...) aufruft in try/except block packen -> fehler meldung als popup -> kein programm absturz mehr
+ 
+7. alle punkte (inkl vektoren) anzeigen, den neuesten hervorheben
